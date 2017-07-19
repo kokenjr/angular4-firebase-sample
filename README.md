@@ -39,5 +39,5 @@ You can run tests with the following command:
 
 * There is form validation for username and password
 * There is also an alert, if incorrect credentials are givien
-* Movement Score card is a place holder, for show,
+* Movement Score card is a place holder, for show.
 * Chose threshold of >10% and <-10% to show red arrows
