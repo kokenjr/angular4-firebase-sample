@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse bg-hmd">
+  <div class="container">
+    <a class="navbar-brand" href="#">HMD</a>
+
+    <button *ngIf="signedIn" class="btn btn-secondary btn-sign-out" (click)="logout()">Sign out</button>
+
+  </div>
+
+</nav>
+<div class="container col-sm-4 main">
+  <alert></alert>
+  <router-outlet></router-outlet>
+</div>

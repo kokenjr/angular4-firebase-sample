@@ -1,0 +1,25 @@
+<!-- <img *ngIf="!loaded" class ="loading" src="assets/loading.gif"/> -->
+<h3 *ngIf="!loaded" [@loadingAnimation] class="loading">Loading...</h3>
+<div *ngIf="loaded" [@cardAnimation] class="card">
+  <div class="card-header">
+    <h3>Respiration Rate</h3>
+    <h5 class="card-date">12AM - 12PM</h5>
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">{{todayRespirationAverage}} breaths per minute</h4>
+    <img *ngIf="showLastNightArrow" class ="last-night-arrow" src="assets/{{lastNightArrowImage}}.svg"/><p class="card-text">{{lastNightPercent}}% from last night</p>
+    <img *ngIf="showLastWeekArrow" class ="last-night-arrow" src="assets/{{lastWeekArrowImage}}.svg"/><p class="card-text">{{weeklyAvergePercent}}% from weekly average</p>
+  </div>
+</div>
+
+<div *ngIf="loaded" [@cardAnimation] class="card">
+  <div class="card-header">
+    <h3>Movement Score</h3>
+    <h5 class="card-date">12AM - 12PM</h5>
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">[Place holder for movement score]</h4>
+    <img class ="last-night-arrow" src="assets/green_arrow_up.svg"/><p class="card-text">1% from last night</p>
+    <img class ="last-night-arrow" src="assets/green_arrow_down.svg"/><p class="card-text">1% from weekly average</p>
+  </div>
+</div>

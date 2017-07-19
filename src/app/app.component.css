@@ -1,0 +1,12 @@
+.bg-hmd {
+  background-color: #5ea2b2 !important;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.btn-sign-out {
+  float: right;
+  cursor: pointer;
+}
